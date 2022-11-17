@@ -1,12 +1,10 @@
 package ru.netology.service;
 
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 public class CashbackHackServiceTest {
-
 
     @Test
     public void shouldIfAmountUnderLimitBoundary() {
@@ -15,7 +13,6 @@ public class CashbackHackServiceTest {
         int amount = 1500;
         int expected = 500;
         int actual = service.remain(amount);
-
 
         assertEquals(expected, actual);
     }
@@ -38,7 +35,6 @@ public class CashbackHackServiceTest {
         int amount = 1000;
         int expected = 0;
         int actual = service.remain(amount);
-
 
         assertEquals(expected, actual);
     }
